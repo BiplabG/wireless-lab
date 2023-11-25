@@ -11,7 +11,7 @@ DHT dht(DHTPIN, DHTTYPE);
 int toggle=1;
 void IRAM_ATTR toggleLED(){
   // Code for the blinking LED Part
-  Serial.println("Toggle LED Called!!!");
+  Serial.println("Toggle LED Called!!!");  
   if (toggle==0){
     //blink red
     digitalWrite(32, 1);
@@ -29,8 +29,8 @@ void IRAM_ATTR toggleLED(){
 }
 
 //Wifi and MQTT broker data
-const char* ssid = "WiFi-2.4-743C";
-const char* password = "CU1gd6p12yRY";
+const char* ssid = "WiFi-2.4-E678";
+const char* password = "ws5rm27kjcu9s";
 const char* mqtt_server = "broker.emqx.io";
 
 WiFiClient espClient;
@@ -127,22 +127,26 @@ void reconnect() {
   Serial.print(f);
   Serial.println("°F");
 
-  //Final string to return
-  sprintf(msg, "Humidity: %.3f Temperature: %.3f", h, t);
+  //Final string to return // Resolution is 1 
+  sprintf(msg, "Humidity: %.f Temperature: %.f", h, t);
 }
 
 // the loop function runs over and over again forever
 void loop() {
   //For client connections
+  Serial.println(toggle);
   if (!client.connected()) {
     reconnect();
   }
   client.loop();
 
   long now = millis();
-  if (now - lastMsg > 1000) {
+  if (now - lastMsg > 1000 && toggle == 0) {
     dht_get_data();
     lastMsg = now;
     client.publish("krishna_topic_2", msg);
+  }
+  else{
+    Serial.println("Stopped reading the data from sensor.");
   }
 }
