@@ -2,10 +2,14 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include <Wire.h>
+#include <WiFiUdp.h>
+#include <NTPClient.h>
 
 #define DHTPIN 26
 #define DHTTYPE DHT11
 
+WiFiUDP ntpUDP;
+NTPClient timeClient(ntpUDP);
 DHT dht(DHTPIN, DHTTYPE); 
 
 int toggle=1;
@@ -36,7 +40,7 @@ const char* mqtt_server = "broker.emqx.io";
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
-char msg[50];
+char msg[100];
 int value = 0;
 
 // the setup function runs once when you press reset or power the board
@@ -54,6 +58,10 @@ void setup() {
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
+
+  // NTPClient to get time
+  timeClient.begin();
+  timeClient.setTimeOffset(3600);
 }
 
 void setup_wifi() {
@@ -113,6 +121,9 @@ void reconnect() {
   float h = dht.readHumidity();
   float t = dht.readTemperature();
   float f = dht.readTemperature(true);
+  String time = timeClient.getFormattedDate();
+  char timestamp[time.length() + 1];
+  time.toCharArray(timestamp, time.length() + 1);
 
   if (isnan(h) || isnan(t) || isnan(f)) {
     Serial.println("Echec reception");
@@ -125,21 +136,26 @@ void reconnect() {
   Serial.print(t);
   Serial.print("°C, ");
   Serial.print(f);
-  Serial.println("°F");
+  Serial.print("°F");
+  Serial.print("  TimeStamp: ");
+  Serial.println(timestamp);
 
   //Final string to return // Resolution is 1 
-  sprintf(msg, "Humidity: %.f Temperature: %.f", h, t);
+  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
 }
 
 // the loop function runs over and over again forever
 void loop() {
   //For client connections
-  Serial.println(toggle);
   if (!client.connected()) {
     reconnect();
   }
+  //Ensure we get valid date and time
+  while(!timeClient.update()) {
+    timeClient.forceUpdate();
+  }
   client.loop();
-
+  
   long now = millis();
   if (now - lastMsg > 1000 && toggle == 0) {
     dht_get_data();
