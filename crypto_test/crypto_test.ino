@@ -9,7 +9,6 @@ byte key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0
 //cypher[16] stores the encrypted text
 // byte cypher[16];
 //decryptedtext[16] stores decrypted text after decryption
-byte decryptedtext[16];
 //creating an object of AES128 class
 AES128 aes128;
 
@@ -105,7 +104,7 @@ void decryptWhole(char *encryptedText, size_t length){
 void setup() {
   Serial.begin(9600);
   aes128.setKey(key,16);// Setting Key for AES
-  
+
   char plainText[] = "This is the text to encrypt in total. Can you do this as much as you want bro in life?";
   encryptWhole(plainText, strlen(plainText));
   decryptWhole(encryptedText, strlen(plainText));

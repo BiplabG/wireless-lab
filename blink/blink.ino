@@ -4,18 +4,86 @@
 #include <Wire.h>
 #include <WiFiUdp.h>
 #include <NTPClient.h>
+#include <Crypto.h>
+#include <AES.h>
+#include <string.h>
 
 #define DHTPIN 26
 #define DHTTYPE DHT11
 #define DEBOUNCE_TIME  50
 
 unsigned long lastDebounceTime = 0;
+int toggle=1;
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 DHT dht(DHTPIN, DHTTYPE); 
 
-int toggle=1;
+// For AES Encryption
+byte key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
+AES128 aes128;
+char encryptedText[128];
+char decryptedText[128];
+
+void encryptWhole(char *plain, size_t length){
+  int byte_len;
+  if (length % 16 == 0){
+    byte_len = length;
+  } else {
+    byte_len = (length / 16) * 16 + 16;
+  }
+  byte plainbyte[byte_len];
+  for (int i=0; i < byte_len-1; i++){
+    if (i >= length){
+      plainbyte[i] = 0x0;
+    }
+    else {
+      plainbyte[i] = plain[i];
+    }
+  }
+  byte cypher[byte_len];
+
+  byte *cp;
+  byte *pbp;
+  cp = cypher;
+  pbp = plainbyte;
+  for (int j=0; j<byte_len; j=j+16){
+    aes128.encryptBlock(cp + j, pbp + j);
+  }
+  // char encryptedText[byte_len];
+  for (int i=0; i < byte_len; i++){
+      encryptedText[i] = cypher[i];
+  }
+}
+
+void decryptWhole(char *encryptedText, size_t length){
+  int byte_len;
+  if (length % 16 == 0){
+    byte_len = length;
+  } else {
+    byte_len = (length / 16) * 16 + 16;
+  }
+
+  byte cypher[byte_len];
+  for (int i=0; i < byte_len; i++){
+    cypher[i] = encryptedText[i];
+  }
+
+  byte decryptedByte[byte_len];
+  byte *dcp;
+  byte *dpbp;
+  dcp = cypher;
+  dpbp = decryptedByte;
+  for (int j=0; j<byte_len; j=j+16){
+    aes128.decryptBlock(dpbp+j, dcp+j);
+  }
+  for (int i=0; i < byte_len-1; i++){
+      decryptedText[i] = decryptedByte[i];
+  }
+}
+
+
+
 void IRAM_ATTR toggleLED(){
   if ((millis() - lastDebounceTime) > DEBOUNCE_TIME ){
     if (toggle==0){
@@ -46,7 +114,7 @@ const char* mqtt_server = "broker.emqx.io";
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
-char msg[100];
+char msg[128];
 int value = 0;
 
 // the setup function runs once when you press reset or power the board
@@ -68,6 +136,9 @@ void setup() {
   // NTPClient to get time
   timeClient.begin();
   timeClient.setTimeOffset(3600);
+
+  //AES Setup
+  aes128.setKey(key,16);// Setting Key for AES
 }
 
 void setup_wifi() {
@@ -147,7 +218,7 @@ void reconnect() {
   Serial.println(timestamp);
 
   //Final string to return // Resolution is 1 
-  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s \0", h, t, timestamp);
 }
 
 // the loop function runs over and over again forever
@@ -166,6 +237,7 @@ void loop() {
   if (now - lastMsg > 1000 && toggle == 0) {
     dht_get_data();
     lastMsg = now;
-    client.publish("krishna_topic_2", msg);
+    encryptWhole(msg, strlen(msg));
+    client.publish("krishna_topic_2", encryptedText);
   }
 }
