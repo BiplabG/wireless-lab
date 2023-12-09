@@ -7,6 +7,9 @@
 
 #define DHTPIN 26
 #define DHTTYPE DHT11
+#define DEBOUNCE_TIME  50
+
+unsigned long lastDebounceTime = 0;
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
@@ -14,27 +17,30 @@ DHT dht(DHTPIN, DHTTYPE);
 
 int toggle=1;
 void IRAM_ATTR toggleLED(){
-  // Code for the blinking LED Part
-  Serial.println("Toggle LED Called!!!");  
-  if (toggle==0){
-    //blink red
-    digitalWrite(32, 1);
-    digitalWrite(33, 0);
-  } else {
-    //blink white
-    digitalWrite(33, 1);
-    digitalWrite(32, 0);
+  if ((millis() - lastDebounceTime) > DEBOUNCE_TIME ){
+    if (toggle==0){
+      //blink red
+      Serial.println("Stopped collecting data.");
+      digitalWrite(32, 1);
+      digitalWrite(33, 0);
+    } else {
+      //blink white
+      Serial.println("Resumed collecting data.");
+      digitalWrite(33, 1);
+      digitalWrite(32, 0);
+    }
+    if (toggle==1){
+          toggle=0;
+        } else {
+          toggle=1;
+        }
+    lastDebounceTime = millis();
   }
-  if (toggle==1){
-        toggle=0;
-      } else {
-        toggle=1;
-      }
 }
 
 //Wifi and MQTT broker data
-const char* ssid = "WiFi-2.4-E678";
-const char* password = "ws5rm27kjcu9s";
+const char* ssid = "WiFi-2.4-743C";
+const char* password = "CU1gd6p12yRY";
 const char* mqtt_server = "broker.emqx.io";
 
 WiFiClient espClient;
@@ -161,8 +167,5 @@ void loop() {
     dht_get_data();
     lastMsg = now;
     client.publish("krishna_topic_2", msg);
-  }
-  else{
-    Serial.println("Stopped reading the data from sensor.");
   }
 }
