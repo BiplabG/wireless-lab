@@ -7,6 +7,7 @@
 #include <Crypto.h>
 #include <AES.h>
 #include <string.h>
+#include "BLAKE2s.h"
 
 #define DHTPIN 26
 #define DHTTYPE DHT11
@@ -22,8 +23,13 @@ DHT dht(DHTPIN, DHTTYPE);
 // For AES Encryption
 byte key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
 AES128 aes128;
-char encryptedText[128];
-char decryptedText[128];
+char encryptedText[256];
+char decryptedText[256];
+
+// For hashing part
+BLAKE2s blake2s;
+byte hash_key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
+
 
 void encryptWhole(char *plain, size_t length){
   int byte_len;
@@ -82,8 +88,6 @@ void decryptWhole(char *encryptedText, size_t length){
   }
 }
 
-
-
 void IRAM_ATTR toggleLED(){
   if ((millis() - lastDebounceTime) > DEBOUNCE_TIME ){
     if (toggle==0){
@@ -107,16 +111,16 @@ void IRAM_ATTR toggleLED(){
 }
 
 //Wifi and MQTT broker data
-const char* ssid = "WiFi-2.4-E678";
-const char* password = "ws5rm27kjcu9s";
-const char* mqtt_server = "broker.emqx.io";
+const char* ssid = "biplabph";
+const char* password = "biplab123";
+const char* mqtt_server = "192.168.215.75";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
 long lastheartbeat = 0;
 bool sendData = false;
-char msg[200];
+char msg[256];
 int value = 0;
 
 // the setup function runs once when you press reset or power the board
@@ -224,18 +228,20 @@ void reconnect() {
     return;
   }
 
-  Serial.print("Humidity: ");
-  Serial.print(h);
-  Serial.print("%  Temperature: ");
-  Serial.print(t);
-  Serial.print("°C, ");
-  Serial.print(f);
-  Serial.print("°F");
-  Serial.print("  TimeStamp: ");
-  Serial.println(timestamp);
-
+  char temp_msg[128];
+  byte hash_buffer[128];
+  sprintf(temp_msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+  
+  blake2s.reset();
+  blake2s.update(temp_msg, strlen(temp_msg));
+  blake2s.finalize(hash_buffer, 32);
+  blake2s.clear();
   //Final string to return // Resolution is 1 
-  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s \0", h, t, timestamp);
+  // sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+
+  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s Hash: %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", h, t, timestamp, hash_buffer[0],hash_buffer[1],hash_buffer[2],hash_buffer[3],hash_buffer[4],hash_buffer[5],hash_buffer[6],hash_buffer[7],hash_buffer[8],hash_buffer[9],hash_buffer[10],hash_buffer[11],hash_buffer[12],hash_buffer[13],hash_buffer[14],hash_buffer[15],hash_buffer[16],hash_buffer[17],hash_buffer[18],hash_buffer[19],hash_buffer[20],hash_buffer[21],hash_buffer[22],hash_buffer[23],hash_buffer[24],hash_buffer[25],hash_buffer[26],hash_buffer[27],hash_buffer[28],hash_buffer[29],hash_buffer[30],hash_buffer[31]);
+
+  Serial.println(msg);
 }
 
 // the loop function runs over and over again forever

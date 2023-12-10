@@ -4,11 +4,12 @@ import random
 
 from paho.mqtt import client as mqtt_client
 from Crypto.Cipher import AES
+from Crypto.Hash import BLAKE2s
 import time
 
 
 
-broker = 'broker.emqx.io'
+broker = 'localhost'
 port = 1883
 last_check = 0
 current_time = 0
@@ -51,11 +52,18 @@ def subscribe(client: mqtt_client):
             # Send acknowledgment to ESP32 to start sending data
             client.publish("acknowledge", "Start message received. Ready to receive data.")        
         elif (msg.topic != "start" and msg.topic != "heartbeat"and len(msg.payload) % 16 == 0):
-            print(msg.topic,msg.payload)
             print(f"Received `{cipher.decrypt(msg.payload).decode()}` from `{msg.topic}` topic")
-            open("sampleText2.txt","a").write(cipher.decrypt(msg.payload).decode().strip('\0') + "\n")            
+            decoded_message = cipher.decrypt(msg.payload).decode().strip('\0')
+            message, hash = decoded_message.split(" Hash: ")
+
+            hash_obj = BLAKE2s.new(digest_bits=256)
+            hash_obj.update(message.encode())
+            if hash_obj.hexdigest() == hash.lower():
+                open("sampleText2.txt","a").write(message + "\n")
+            else:
+                raise Exception("Hash does not match")
             #Send and heartbeat signal every 30 to ESP32 to make sure server is actively receving
-            send_heartbeat(client)        
+            send_heartbeat(client)
 
     client.subscribe(topic)
     client.subscribe("start")
