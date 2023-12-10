@@ -4,10 +4,11 @@ import random
 
 from paho.mqtt import client as mqtt_client
 from Crypto.Cipher import AES
+from Crypto.Hash import BLAKE2s
 
 
 
-broker = 'broker.emqx.io'
+broker = 'localhost'
 port = 1883
 topic = "krishna_topic_2"
 # generate client ID with pub prefix randomly
@@ -39,7 +40,15 @@ def subscribe(client: mqtt_client):
         # print(cipher.decrypt(msg.payload).decode())
         if (len(msg.payload) % 16 == 0):
             print(f"Received `{cipher.decrypt(msg.payload).decode()}` from `{msg.topic}` topic")
-            open("sampleText2.txt","a").write(cipher.decrypt(msg.payload).decode().strip('\0') + "\n")
+            decoded_message = cipher.decrypt(msg.payload).decode().strip('\0')
+            message, hash = decoded_message.split(" Hash: ")
+
+            hash_obj = BLAKE2s.new(digest_bits=256)
+            hash_obj.update(message.encode())
+            if hash_obj.hexdigest() == hash.lower():
+                open("sampleText2.txt","a").write(message + "\n")
+            else:
+                raise Exception("Hash does not match")
 
     client.subscribe(topic)
     client.on_message = on_message
