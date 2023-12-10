@@ -109,7 +109,7 @@ void IRAM_ATTR toggleLED(){
 //Wifi and MQTT broker data
 const char* ssid = "WiFi-2.4-E678";
 const char* password = "ws5rm27kjcu9s";
-const char* mqtt_server = "broker.emqx.io";
+const char* mqtt_server = "192.168.1.40";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -199,7 +199,6 @@ void reconnect() {
       client.subscribe("acknowledge");
       client.subscribe("heartbeat");
       client.publish("start", "Initial start message");
-      sendData = true;
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -243,7 +242,6 @@ void loop() {
   //For client connections
   if (!client.connected()) {
     reconnect();
-    lastheartbeat = millis();
   }
   //Ensure we get valid date and time
   while(!timeClient.update()) {
@@ -261,6 +259,9 @@ void loop() {
   if (now - lastheartbeat > 30000){
     if (!client.connected()) {
       reconnect();
+    }
+    else if(!sendData){
+      client.publish("start", "Initial start message");
     }
   }
 }

@@ -8,7 +8,7 @@ import time
 
 
 
-broker = 'broker.emqx.io'
+broker = 'localhost'
 port = 1883
 last_check = 0
 current_time = 0
@@ -38,9 +38,9 @@ def connect_mqtt() -> mqtt_client:
             print("Failed to connect, return code %d\n", rc)
 
     client = mqtt_client.Client(client_id)
-    client.username_pw_set(username, password)
+    #client.username_pw_set(username, password)
     client.on_connect = on_connect
-    client.connect(broker, port)
+    client.connect(broker, port, 60)
     return client
 
 
