@@ -20,6 +20,19 @@ WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 DHT dht(DHTPIN, DHTTYPE); 
 
+//Wifi and MQTT broker data
+const char* ssid = "WiFi-2.4-E678";
+const char* password = "ws5rm27kjcu9s";
+const char* mqtt_server = "192.168.1.40";
+
+WiFiClient espClient;
+PubSubClient client(espClient);
+long lastMsg = 0;
+long lastheartbeat = 0;
+bool sendData = true;
+char msg[256];
+int value = 0;
+
 // For AES Encryption
 byte key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
 AES128 aes128;
@@ -102,7 +115,7 @@ void IRAM_ATTR toggleLED(){
       digitalWrite(32, 0);
     }
     if (toggle==1){
-          toggle=0;
+          toggle=0;          
         } else {
           toggle=1;
         }
@@ -110,18 +123,6 @@ void IRAM_ATTR toggleLED(){
   }
 }
 
-//Wifi and MQTT broker data
-const char* ssid = "WiFi-2.4-E678";
-const char* password = "ws5rm27kjcu9s";
-const char* mqtt_server = "192.168.1.40";
-
-WiFiClient espClient;
-PubSubClient client(espClient);
-long lastMsg = 0;
-long lastheartbeat = 0;
-bool sendData = false;
-char msg[256];
-int value = 0;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -138,7 +139,6 @@ void setup() {
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
-
   // NTPClient to get time
   timeClient.begin();
   timeClient.setTimeOffset(3600);
@@ -194,13 +194,12 @@ void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
-    sendData = false;
     // Attempt to connect
     if (client.connect("ESP8266Client")) {
       Serial.println("connected");
       // Subscribe
       client.subscribe("acknowledge");
-      client.publish("heartbeat", "Initial start message");
+      //client.publish("heartbeat", "Initial start message");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -246,6 +245,7 @@ void loop() {
   //For client connections
   if (!client.connected()) {
     reconnect();
+    lastheartbeat = millis();
   }
   //Ensure we get valid date and time
   while(!timeClient.update()) {
@@ -254,13 +254,13 @@ void loop() {
   client.loop();
   
   long now = millis();
-  if (now - lastMsg > 1000 && toggle == 0 && sendData) {
+  if (now - lastMsg > 5000 && toggle == 0 && sendData) {
     dht_get_data();
     lastMsg = now;
     encryptWhole(msg, strlen(msg));
     client.publish("krishna_topic_2", encryptedText);
   }
-  if (now - lastheartbeat > 30000){
+  if (now - lastheartbeat > 60000){
     sendData = false;
     Serial.println(" Server is not alive. Stop sending data");
     if (!client.connected()) {

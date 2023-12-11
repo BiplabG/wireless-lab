@@ -26,7 +26,7 @@ cipher = AES.new(key, AES.MODE_ECB)
 def send_heartbeat(client):
     global last_check, current_time
     current_time = time.time()
-    if(current_time - last_check >30):
+    if(current_time - last_check >15):
         client.publish("acknowledge", "Server is alive.")
         last_check = current_time
 
@@ -46,10 +46,7 @@ def connect_mqtt() -> mqtt_client:
 
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
-        if (msg.topic == "heartbeat"):
-            # Send acknowledgment to ESP32 to start sending data
-            client.publish("acknowledge", "Start message received. Ready to receive data.")        
-        elif (msg.topic != "start" and msg.topic != "heartbeat"and len(msg.payload) % 16 == 0):
+        if (len(msg.payload) % 16 == 0):
             print(f"Received `{cipher.decrypt(msg.payload).decode()}` from `{msg.topic}` topic")
             decoded_message = cipher.decrypt(msg.payload).decode().strip('\0')
             message, hash = decoded_message.split(" Hash: ")
@@ -64,7 +61,6 @@ def subscribe(client: mqtt_client):
             send_heartbeat(client)
 
     client.subscribe(topic)
-    client.subscribe("heartbeat")
     client.on_message = on_message
 
 def run():
