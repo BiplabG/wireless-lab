@@ -111,9 +111,9 @@ void IRAM_ATTR toggleLED(){
 }
 
 //Wifi and MQTT broker data
-const char* ssid = "biplabph";
-const char* password = "biplab123";
-const char* mqtt_server = "192.168.215.75";
+const char* ssid = "WiFi-2.4-E678";
+const char* password = "ws5rm27kjcu9s";
+const char* mqtt_server = "192.168.1.40";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -178,13 +178,13 @@ void callback(char* topic, byte* message, unsigned int length) {
       Serial.print((char)message[i]);
       messageTemp += (char)message[i];
     }
-  } else if(strcmp(topic, "heartbeat") == 0){
+  } else if(strcmp(topic, "acknowledge") == 0){
+    for (int i = 0; i < length; i++) {
+      messageTemp += (char)message[i];
+    }
     lastheartbeat = millis();
     sendData = true;
-    Serial.print("Heartbeat received. Server is active.");
-  } else if(strcmp(topic, "acknowledge") == 0){
-    sendData = true;
-    Serial.print("Acknowledgment received. Start sending data.");
+    Serial.print(messageTemp);
   }  
   
   Serial.println();
@@ -199,11 +199,8 @@ void reconnect() {
     if (client.connect("ESP8266Client")) {
       Serial.println("connected");
       // Subscribe
-      client.subscribe("esp32/output");
       client.subscribe("acknowledge");
-      client.subscribe("heartbeat");
-      client.publish("start", "Initial start message");
-      sendData = true;
+      client.publish("heartbeat", "Initial start message");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -249,7 +246,6 @@ void loop() {
   //For client connections
   if (!client.connected()) {
     reconnect();
-    lastheartbeat = millis();
   }
   //Ensure we get valid date and time
   while(!timeClient.update()) {
@@ -265,8 +261,11 @@ void loop() {
     client.publish("krishna_topic_2", encryptedText);
   }
   if (now - lastheartbeat > 30000){
+    sendData = false;
+    Serial.println(" Server is not alive. Stop sending data");
     if (!client.connected()) {
       reconnect();
     }
+    lastheartbeat = now;
   }
 }

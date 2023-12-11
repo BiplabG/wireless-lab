@@ -9,7 +9,7 @@ import time
 
 
 
-broker = 'localhost'
+broker = '192.168.1.40'
 port = 1883
 last_check = 0
 current_time = 0
@@ -25,10 +25,9 @@ cipher = AES.new(key, AES.MODE_ECB)
 
 def send_heartbeat(client):
     global last_check, current_time
-    print(current_time - last_check)
     current_time = time.time()
     if(current_time - last_check >30):
-        client.publish("heartbeat", "Server is alive.")
+        client.publish("acknowledge", "Server is alive.")
         last_check = current_time
 
 def connect_mqtt() -> mqtt_client:
@@ -47,8 +46,7 @@ def connect_mqtt() -> mqtt_client:
 
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
-        # print(cipher.decrypt(msg.payload).decode())
-        if (msg.topic == "start"):
+        if (msg.topic == "heartbeat"):
             # Send acknowledgment to ESP32 to start sending data
             client.publish("acknowledge", "Start message received. Ready to receive data.")        
         elif (msg.topic != "start" and msg.topic != "heartbeat"and len(msg.payload) % 16 == 0):
@@ -66,14 +64,14 @@ def subscribe(client: mqtt_client):
             send_heartbeat(client)
 
     client.subscribe(topic)
-    client.subscribe("start")
     client.subscribe("heartbeat")
     client.on_message = on_message
-
 
 def run():
     client = connect_mqtt()
     subscribe(client)
+    #Send and heartbeat signal every 30 to ESP32 to make sure server is actively receving
+    send_heartbeat(client)
     client.loop_forever()
 
 
