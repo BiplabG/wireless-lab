@@ -166,23 +166,20 @@ void setup_wifi() {
 void callback(char* topic, byte* message, unsigned int length) {
   
   String messageTemp;
+  Serial.print("Message arrived on topic: ");
+  Serial.print(topic);
+  Serial.print(". Message: ");
+  for (int i = 0; i < length; i++) {
+    Serial.print((char)message[i]);
+    messageTemp += (char)message[i];
+  }
   if (strcmp(topic, "krishna_topic_2") == 0){
-    Serial.print("Message arrived on topic: ");
-    Serial.print(topic);
-    Serial.print(". Message: ");
-    for (int i = 0; i < length; i++) {
-      Serial.print((char)message[i]);
-      messageTemp += (char)message[i];
-    }
+    
   } else if(strcmp(topic, "heartbeat") == 0){
     lastheartbeat = millis();
     sendData = true;
-    Serial.print("Heartbeat received. Server is active.");
-  } else if(strcmp(topic, "acknowledge") == 0){
-    sendData = true;
-    Serial.print("Acknowledgment received. Start sending data.");
-  }  
-  
+    Serial.print(messageTemp);
+  }
   Serial.println();
 }
 
@@ -196,9 +193,8 @@ void reconnect() {
       Serial.println("connected");
       // Subscribe
       client.subscribe("esp32/output");
-      client.subscribe("acknowledge");
       client.subscribe("heartbeat");
-      client.publish("start", "Initial start message");
+      client.publish("heartbeat", "Initial start message");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -261,13 +257,13 @@ void loop() {
     client.publish("krishna_topic_2", encryptedText);
   }
   if (now - lastheartbeat > 30000){
-    Serial.println(sendData);
-    client.publish("start", "Initial start message");
+    //sendData = false;
+    lastheartbeat = now;
     if (!client.connected()) {
       reconnect();
-    }
-    else if(!sendData){
-      client.publish("start", "Initial start message");
+    }else if(!sendData){
+      Serial.println(sendData);
+      client.publish("heartbeat", "Initial start message");
     }
   }
 }
