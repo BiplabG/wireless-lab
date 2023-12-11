@@ -234,7 +234,11 @@ void reconnect() {
   Serial.println(timestamp);
 
   //Final string to return // Resolution is 1 
-  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s \0", h, t, timestamp);
+  // sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+
+  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s Hash: %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", h, t, timestamp, hash_buffer[0],hash_buffer[1],hash_buffer[2],hash_buffer[3],hash_buffer[4],hash_buffer[5],hash_buffer[6],hash_buffer[7],hash_buffer[8],hash_buffer[9],hash_buffer[10],hash_buffer[11],hash_buffer[12],hash_buffer[13],hash_buffer[14],hash_buffer[15],hash_buffer[16],hash_buffer[17],hash_buffer[18],hash_buffer[19],hash_buffer[20],hash_buffer[21],hash_buffer[22],hash_buffer[23],hash_buffer[24],hash_buffer[25],hash_buffer[26],hash_buffer[27],hash_buffer[28],hash_buffer[29],hash_buffer[30],hash_buffer[31]);
+
+  Serial.println(msg);
 }
 
 // the loop function runs over and over again forever
@@ -257,6 +261,8 @@ void loop() {
     client.publish("krishna_topic_2", encryptedText);
   }
   if (now - lastheartbeat > 30000){
+    Serial.println(sendData);
+    client.publish("start", "Initial start message");
     if (!client.connected()) {
       reconnect();
     }

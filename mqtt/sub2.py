@@ -47,15 +47,17 @@ def connect_mqtt() -> mqtt_client:
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
         # print(cipher.decrypt(msg.payload).decode())
+        print("chk1")
+        print(msg.payload)
         if (msg.topic == "start"):
             # Send acknowledgment to ESP32 to start sending data
+            print("chk2")
             client.publish("acknowledge", "Start message received. Ready to receive data.")        
         elif (msg.topic != "start" and msg.topic != "heartbeat"and len(msg.payload) % 16 == 0):
-            print(msg.topic,msg.payload)
             print(f"Received `{cipher.decrypt(msg.payload).decode()}` from `{msg.topic}` topic")
             open("sampleText2.txt","a").write(cipher.decrypt(msg.payload).decode().strip('\0') + "\n")            
             #Send and heartbeat signal every 30 to ESP32 to make sure server is actively receving
-            send_heartbeat(client)        
+            send_heartbeat(client)
 
     client.subscribe(topic)
     client.subscribe("start")
