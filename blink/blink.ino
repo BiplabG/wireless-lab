@@ -21,23 +21,23 @@ NTPClient timeClient(ntpUDP);
 DHT dht(DHTPIN, DHTTYPE); 
 
 //Wifi and MQTT broker data
-const char* ssid = "WiFi-2.4-E678";
-const char* password = "ws5rm27kjcu9s";
-const char* mqtt_server = "192.168.1.40";
+const char* ssid = "biplabph";
+const char* password = "biplab123";
+const char* mqtt_server = "192.168.215.75";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
 long lastheartbeat = 0;
 bool sendData = true;
-char msg[256];
+char msg[512];
 int value = 0;
 
 // For AES Encryption
-byte key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
+byte key[16]={0x0A, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};
 AES128 aes128;
-char encryptedText[256];
-char decryptedText[256];
+char encryptedText[512];
+char decryptedText[512];
 
 // For hashing part
 BLAKE2s blake2s;
@@ -45,60 +45,40 @@ byte hash_key[16]={0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,0x08, 0x09, 0x
 
 
 void encryptWhole(char *plain, size_t length){
-  int byte_len;
-  if (length % 16 == 0){
-    byte_len = length;
-  } else {
-    byte_len = (length / 16) * 16 + 16;
-  }
-  byte plainbyte[byte_len];
-  for (int i=0; i < byte_len-1; i++){
-    if (i >= length){
-      plainbyte[i] = 0x0;
+  // Assuming aes128.encryptBlock() encrypts 16 bytes at a time
+    const size_t block_size = 16;
+    size_t padded_length = length + (block_size - (length % block_size)); // Calculate padded length
+    uint8_t *padded_plain = (uint8_t *)malloc(padded_length * sizeof(uint8_t)); // Allocate memory for padded plaintext
+
+    // Copy the original plaintext and pad it
+    memcpy(padded_plain, plain, length);
+    memset(padded_plain + length, padded_length - length, padded_length - length);
+
+    // Calculate the number of blocks
+    size_t num_blocks = padded_length / block_size;
+    uint8_t *cipher = (uint8_t *)malloc(num_blocks * block_size * sizeof(uint8_t)); // Allocate memory for ciphertext
+
+    // Encrypt each block and store the cipher
+    for (size_t i = 0; i < num_blocks; ++i) {
+        aes128.encryptBlock(&cipher[i * block_size], &padded_plain[i * block_size]);
     }
-    else {
-      plainbyte[i] = plain[i];
+
+    // Convert cipher blocks to a string (hex representation)
+    // char encryptedText[num_blocks * block_size * 2 + 1]; // +1 for null terminator
+    size_t index = 0;
+    for (size_t i = 0; i < num_blocks * block_size; ++i) {
+        sprintf(&encryptedText[index], "%02x", cipher[i]);
+        index += 2;
     }
-  }
-  byte cypher[byte_len];
+    encryptedText[index] = '\0'; // Add null terminator
 
-  byte *cp;
-  byte *pbp;
-  cp = cypher;
-  pbp = plainbyte;
-  for (int j=0; j<byte_len; j=j+16){
-    aes128.encryptBlock(cp + j, pbp + j);
-  }
-  // char encryptedText[byte_len];
-  for (int i=0; i < byte_len; i++){
-      encryptedText[i] = cypher[i];
-  }
-}
+    // Output the encrypted text
+    // printf("Encrypted Text: %s\n", encryptedText);
 
-void decryptWhole(char *encryptedText, size_t length){
-  int byte_len;
-  if (length % 16 == 0){
-    byte_len = length;
-  } else {
-    byte_len = (length / 16) * 16 + 16;
-  }
+    // Free dynamically allocated memory
+    free(padded_plain);
+    free(cipher);
 
-  byte cypher[byte_len];
-  for (int i=0; i < byte_len; i++){
-    cypher[i] = encryptedText[i];
-  }
-
-  byte decryptedByte[byte_len];
-  byte *dcp;
-  byte *dpbp;
-  dcp = cypher;
-  dpbp = decryptedByte;
-  for (int j=0; j<byte_len; j=j+16){
-    aes128.decryptBlock(dpbp+j, dcp+j);
-  }
-  for (int i=0; i < byte_len-1; i++){
-      decryptedText[i] = decryptedByte[i];
-  }
 }
 
 void IRAM_ATTR toggleLED(){
@@ -115,7 +95,9 @@ void IRAM_ATTR toggleLED(){
       digitalWrite(32, 0);
     }
     if (toggle==1){
-          toggle=0;          
+          toggle=0;
+          sendData = true;  
+          lastheartbeat = millis(); 
         } else {
           toggle=1;
         }
@@ -227,6 +209,8 @@ void reconnect() {
   char temp_msg[128];
   byte hash_buffer[128];
   sprintf(temp_msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+  encryptWhole(temp_msg, strlen(temp_msg));
+  Serial.println(temp_msg);
   
   blake2s.reset();
   blake2s.update(temp_msg, strlen(temp_msg));
@@ -234,10 +218,17 @@ void reconnect() {
   blake2s.clear();
   //Final string to return // Resolution is 1 
   // sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s", h, t, timestamp);
+  char hash_string[33];
+  size_t index = 0;
+  for (size_t i = 0; i < 32; ++i) {
+        sprintf(&hash_string[index], "%02x", hash_buffer[i]);
+        index += 2;
+    }
 
-  sprintf(msg, "Humidity: %.f Temperature: %.f TimeStamp: %s Hash: %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", h, t, timestamp, hash_buffer[0],hash_buffer[1],hash_buffer[2],hash_buffer[3],hash_buffer[4],hash_buffer[5],hash_buffer[6],hash_buffer[7],hash_buffer[8],hash_buffer[9],hash_buffer[10],hash_buffer[11],hash_buffer[12],hash_buffer[13],hash_buffer[14],hash_buffer[15],hash_buffer[16],hash_buffer[17],hash_buffer[18],hash_buffer[19],hash_buffer[20],hash_buffer[21],hash_buffer[22],hash_buffer[23],hash_buffer[24],hash_buffer[25],hash_buffer[26],hash_buffer[27],hash_buffer[28],hash_buffer[29],hash_buffer[30],hash_buffer[31]);
-
-  Serial.println(msg);
+  strncat(encryptedText, " Hash: ", 7);
+  strncat(encryptedText, hash_string, strlen(hash_string));
+  
+  Serial.println(encryptedText);
 }
 
 // the loop function runs over and over again forever
@@ -257,7 +248,7 @@ void loop() {
   if (now - lastMsg > 5000 && toggle == 0 && sendData) {
     dht_get_data();
     lastMsg = now;
-    encryptWhole(msg, strlen(msg));
+    // encryptWhole(msg, strlen(msg));
     client.publish("krishna_topic_2", encryptedText);
   }
   if (now - lastheartbeat > 60000){
