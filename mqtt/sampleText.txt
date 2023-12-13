@@ -1,838 +1,255 @@
-Humidity: 61.000000 Temperature: 21.000000
-Humidity: 61.000000 Temperature: 21.000000
-Humidity: 61.000000 Temperature: 21.000000
-Humidity: 61.000000 Temperature: 21.000000
-Humidity: 77.000000 Temperature: 21.500000
-Humidity: 82.000000 Temperature: 21.500000
-Humidity: 85.000000 Temperature: 21.600000
-Humidity: 86.000000 Temperature: 21.500000
-Humidity: 86.000000 Temperature: 21.500000
-Humidity: 84.000000 Temperature: 21.400000
-Humidity: 80.000000 Temperature: 21.299999
-Humidity: 77.000000 Temperature: 21.299999
-Humidity: 72.000000 Temperature: 21.299999
-Humidity: 70.000000 Temperature: 21.299999
-Humidity: 68.000000 Temperature: 21.299999
-Humidity: 67.000000 Temperature: 21.299999
-Humidity: 66.000000 Temperature: 21.299999
-Humidity: 65.000000 Temperature: 21.299999
-Humidity: 64.000000 Temperature: 21.299999
-Humidity: 63.000000 Temperature: 21.200001
-Humidity: 63.000000 Temperature: 21.299999
-Humidity: 63.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 62.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 61.000000 Temperature: 21.200001
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.700
-Humidity: 60.000 Temperature: 21.700
-Humidity: 60.000 Temperature: 21.600
-Humidity: 60.000 Temperature: 21.600
-Humidity: 67.000 Temperature: 21.700
-Humidity: 67.000 Temperature: 21.700
-Humidity: 73.000 Temperature: 21.900
-Humidity: 73.000 Temperature: 21.900
-Humidity: 76.000 Temperature: 21.900
-Humidity: 76.000 Temperature: 21.900
-Humidity: 78.000 Temperature: 21.900
-Humidity: 78.000 Temperature: 21.900
-Humidity: 79.000 Temperature: 21.800
-Humidity: 79.000 Temperature: 21.800
-Humidity: 79.000 Temperature: 21.800
-Humidity: 79.000 Temperature: 21.800
-Humidity: 78.000 Temperature: 21.800
-Humidity: 78.000 Temperature: 21.800
-Humidity: 77.000 Temperature: 21.700
-Humidity: 77.000 Temperature: 21.700
-Humidity: 75.000 Temperature: 21.700
-Humidity: 75.000 Temperature: 21.700
-Humidity: 81.000 Temperature: 22.000
-Humidity: 81.000 Temperature: 22.000
-Humidity: 82.000 Temperature: 22.100
-Humidity: 82.000 Temperature: 22.100
-Humidity: 81.000 Temperature: 22.100
-Humidity: 81.000 Temperature: 22.100
-Humidity: 79.000 Temperature: 22.100
-Humidity: 79.000 Temperature: 22.100
-Humidity: 76.000 Temperature: 22.100
-Humidity: 76.000 Temperature: 22.100
-Humidity: 74.000 Temperature: 22.100
-Humidity: 74.000 Temperature: 22.100
-Humidity: 71.000 Temperature: 22.100
-Humidity: 71.000 Temperature: 22.100
-Humidity: 69.000 Temperature: 22.100
-Humidity: 69.000 Temperature: 22.100
-Humidity: 67.000 Temperature: 22.100
-Humidity: 67.000 Temperature: 22.100
-Humidity: 66.000 Temperature: 22.100
-Humidity: 66.000 Temperature: 22.100
-Humidity: 65.000 Temperature: 22.100
-Humidity: 65.000 Temperature: 22.100
-Humidity: 64.000 Temperature: 22.100
-Humidity: 64.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 63.000 Temperature: 22.100
-Humidity: 62.000 Temperature: 22.100
-Humidity: 62.000 Temperature: 22.100
-Humidity: 62.000 Temperature: 22.100
-Humidity: 62.000 Temperature: 22.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.200
-Humidity: 66.000 Temperature: 21.200
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.100
-Humidity: 66.000 Temperature: 21.200
-Humidity: 66.000 Temperature: 21.200
-Humidity: 79.000 Temperature: 21.300
-Humidity: 79.000 Temperature: 21.300
-Humidity: 73.000 Temperature: 21.300
-Humidity: 73.000 Temperature: 21.300
-Humidity: 71.000 Temperature: 21.300
-Humidity: 71.000 Temperature: 21.300
-Humidity: 70.000 Temperature: 21.300
-Humidity: 70.000 Temperature: 21.300
-Humidity: 69.000 Temperature: 21.300
-Humidity: 69.000 Temperature: 21.300
-Humidity: 68.000 Temperature: 21.300
-Humidity: 68.000 Temperature: 21.300
-Humidity: 67.000 Temperature: 21.300
-
-
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.400
-Humidity: 65.000 Temperature: 21.500
-Humidity: 65.000 Temperature: 21.500
-Humidity: 91.000 Temperature: 22.000
-Humidity: 91.000 Temperature: 22.000
-Humidity: 93.000 Temperature: 22.200
-Humidity: 93.000 Temperature: 22.200
-Humidity: 89.000 Temperature: 21.900
-Humidity: 89.000 Temperature: 21.900
-Humidity: 88.000 Temperature: 21.900
-Humidity: 88.000 Temperature: 21.900
-Humidity: 87.000 Temperature: 21.900
-Humidity: 87.000 Temperature: 21.900
-Humidity: 60.000 Temperature: 24.500
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Humidity: 56.000 Temperature: 25.000
-Humidity: 56.000 Temperature: 25.000
-Humidity: 56.000 Temperature: 25.000
-Humidity: 56.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 25.000
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.900
-Humidity: 55.000 Temperature: 24.800
-Humidity: 55.000 Temperature: 24.800
-Humidity: 55.000 Temperature: 24.800
-Humidity: 55.000 Temperature: 24.800
-Humidity: 64.000 Temperature: 25.000
-Humidity: 64.000 Temperature: 25.000
-Humidity: 80.000 Temperature: 25.200
-Humidity: 80.000 Temperature: 25.200
-Humidity: 85.000 Temperature: 25.300
-Humidity: 85.000 Temperature: 25.300
-Humidity: 87.000 Temperature: 25.400
-Humidity: 87.000 Temperature: 25.400
-Humidity: 88.000 Temperature: 25.400
-Humidity: 88.000 Temperature: 25.400
-Humidity: 89.000 Temperature: 25.400
-Humidity: 89.000 Temperature: 25.400
-Humidity: 89.000 Temperature: 25.400
-Humidity: 89.000 Temperature: 25.400
-Humidity: 89.000 Temperature: 25.300
-Humidity: 89.000 Temperature: 25.300
-Humidity: 89.000 Temperature: 25.200
-Humidity: 89.000 Temperature: 25.200
-Humidity: 88.000 Temperature: 25.200
-Humidity: 88.000 Temperature: 25.200
-Humidity: 87.000 Temperature: 25.000
-Humidity: 87.000 Temperature: 25.000
-Humidity: 85.000 Temperature: 25.000
-Humidity: 85.000 Temperature: 25.000
-Humidity: 82.000 Temperature: 25.000
-Humidity: 82.000 Temperature: 25.000
-Humidity: 79.000 Temperature: 25.000
-Humidity: 79.000 Temperature: 25.000
-Humidity: 76.000 Temperature: 24.900
-Humidity: 76.000 Temperature: 24.900
-Humidity: 72.000 Temperature: 24.800
-Humidity: 72.000 Temperature: 24.800
-Humidity: 68.000 Temperature: 24.800
-Humidity: 68.000 Temperature: 24.800
-Humidity: 66.000 Temperature: 24.800
-Humidity: 66.000 Temperature: 24.800
-Humidity: 65.000 Temperature: 24.800
-Humidity: 65.000 Temperature: 24.800
-Humidity: 63.000 Temperature: 24.800
-Humidity: 63.000 Temperature: 24.800
-Humidity: 62.000 Temperature: 24.700
-Humidity: 62.000 Temperature: 24.700
-Humidity: 62.000 Temperature: 24.700
-Humidity: 62.000 Temperature: 24.700
-Humidity: 61.000 Temperature: 24.700
-Humidity: 61.000 Temperature: 24.700
-Humidity: 61.000 Temperature: 24.700
-Humidity: 61.000 Temperature: 24.700
-Humidity: 61.000 Temperature: 24.600
-Humidity: 61.000 Temperature: 24.600
-Humidity: 60.000 Temperature: 24.600
-Humidity: 60.000 Temperature: 24.600
-Humidity: 60.000 Temperature: 24.600
-Humidity: 60.000 Temperature: 24.600
-Humidity: 59.000 Temperature: 24.600
-Humidity: 59.000 Temperature: 24.600
-Humidity: 59.000 Temperature: 24.600
-Humidity: 59.000 Temperature: 24.600
-Humidity: 59.000 Temperature: 24.500
-Humidity: 59.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.500
-Humidity: 58.000 Temperature: 24.400
-Humidity: 58.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.400
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.300
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.200
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.100
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 24.000
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.900
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.800
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 57.000 Temperature: 23.700
-Humidity: 58.000 Temperature: 23.700
-Humidity: 58.000 Temperature: 23.700
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.600
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.500
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.400
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 58.000 Temperature: 23.300
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 58.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.200
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 59.000 Temperature: 23.100
-Humidity: 73.000 Temperature: 23.300
-Humidity: 73.000 Temperature: 23.300
-Humidity: 81.000 Temperature: 23.400
-Humidity: 81.000 Temperature: 23.400
-Humidity: 84.000 Temperature: 23.500
-Humidity: 84.000 Temperature: 23.500
-Humidity: 86.000 Temperature: 23.500
-Humidity: 86.000 Temperature: 23.500
-Humidity: 87.000 Temperature: 23.500
-Humidity: 87.000 Temperature: 23.500
-Humidity: 88.000 Temperature: 23.400
-Humidity: 88.000 Temperature: 23.400
-Humidity: 88.000 Temperature: 23.400
-Humidity: 88.000 Temperature: 23.400
-Humidity: 87.000 Temperature: 23.400
-Humidity: 87.000 Temperature: 23.400
-Humidity: 86.000 Temperature: 23.300
-Humidity: 86.000 Temperature: 23.300
-Humidity: 84.000 Temperature: 23.300
-Humidity: 84.000 Temperature: 23.300
-Humidity: 81.000 Temperature: 23.200
-Humidity: 81.000 Temperature: 23.200
-Humidity: 78.000 Temperature: 23.200
-Humidity: 78.000 Temperature: 23.200
-Humidity: 74.000 Temperature: 23.200
-Humidity: 74.000 Temperature: 23.200
-Humidity: 72.000 Temperature: 23.200
-Humidity: 72.000 Temperature: 23.200
-Humidity: 70.000 Temperature: 23.200
-Humidity: 70.000 Temperature: 23.200
-Humidity: 68.000 Temperature: 23.200
-Humidity: 68.000 Temperature: 23.200
-Humidity: 67.000 Temperature: 23.200
-Humidity: 67.000 Temperature: 23.200
-Humidity: 66.000 Temperature: 23.200
-Humidity: 66.000 Temperature: 23.200
-Humidity: 65.000 Temperature: 23.100
-Humidity: 65.000 Temperature: 23.100
-Humidity: 65.000 Temperature: 23.100
-Humidity: 65.000 Temperature: 23.100
-Humidity: 64.000 Temperature: 23.100
-Humidity: 64.000 Temperature: 23.100
-Humidity: 64.000 Temperature: 23.100
-Humidity: 64.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 63.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 62.000 Temperature: 23.100
-Humidity: 61.000 Temperature: 23.100
-Humidity: 61.000 Temperature: 23.100
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 23.000
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 61.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.900
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 61.000 Temperature: 22.800
-Humidity: 61.000 Temperature: 22.800
-Humidity: 61.000 Temperature: 22.800
-Humidity: 61.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.800
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
-Humidity: 60.000 Temperature: 22.700
+Humidity: 61 Temperature: 23 TimeStamp: 2023-12-12T12:27:03Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:15:37Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:15:42Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:15:47Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:15:52Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:15:57Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:02Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:07Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:12Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:17Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:22Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:27Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:16:32Z
+Humidity: 64 Temperature: 22 TimeStamp: 2023-12-13T12:16:37Z
+Humidity: 58 Temperature: 22 TimeStamp: 2023-12-13T12:16:41Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:17:56Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:01Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:06Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:11Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:16Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:21Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:26Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:31Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:36Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:42Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:47Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:52Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:18:57Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:02Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:07Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:12Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:17Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:19:22Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:19:27Z
+Humidity: 46 Temperature: 22 TimeStamp: 2023-12-13T12:19:32Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:37Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:42Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:47Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:52Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:19:57Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:24Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:29Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:34Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:39Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:44Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:49Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:54Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:20:59Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:04Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:09Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:14Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:19Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:23Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:28Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:33Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:38Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:43Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:48Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:53Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:21:58Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:03Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:08Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:13Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:18Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:23Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:28Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:33Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:22:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:22:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:22:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:22:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:22:58Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:03Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:08Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:13Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:23Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:28Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:23:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:23:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:24:03Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:08Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:13Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:18Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:23Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:24:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:24:38Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:43Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:48Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:24:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:24:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:18Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:25:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:25:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:26:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:27:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:28:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:03Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:29:08Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:29:13Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:29:18Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:29:23Z
+Humidity: 47 Temperature: 22 TimeStamp: 2023-12-13T12:29:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:29:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:43Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:48Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:53Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:30:58Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:03Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:08Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:13Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:18Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:23Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:28Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:33Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:38Z
+Humidity: 48 Temperature: 22 TimeStamp: 2023-12-13T12:31:48Z
+Humidity: 49 Temperature: 22 TimeStamp: 2023-12-13T12:36:09Z
+Humidity: 55 Temperature: 23 TimeStamp: 2023-12-13T12:36:14Z
+Humidity: 53 Temperature: 23 TimeStamp: 2023-12-13T12:36:19Z
+Humidity: 52 Temperature: 23 TimeStamp: 2023-12-13T12:36:24Z
+Humidity: 51 Temperature: 23 TimeStamp: 2023-12-13T12:36:29Z
+Humidity: 50 Temperature: 23 TimeStamp: 2023-12-13T12:36:34Z
+Humidity: 50 Temperature: 23 TimeStamp: 2023-12-13T12:36:39Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:36:44Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:36:49Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:36:54Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:36:59Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:37:04Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:37:09Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:37:14Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:37:19Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:37:24Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:37:29Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:44:09Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:44:14Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:44:19Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:44:24Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:44:29Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:34Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:39Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:44Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:49Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:54Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:44:58Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:03Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:08Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:13Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:18Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:23Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:28Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:33Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:38Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:43Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:48Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:53Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:45:58Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:03Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:08Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:13Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:18Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:23Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:28Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:33Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:46:38Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:46:43Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:46:48Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:46:53Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:46:58Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:03Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:08Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:13Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:18Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:23Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:28Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:33Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:38Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:43Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:48Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:53Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:47:58Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:03Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:08Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:13Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:18Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:23Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:48:28Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:33Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:38Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:43Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:48Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:53Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:48:58Z
+Humidity: 48 Temperature: 23 TimeStamp: 2023-12-13T12:49:03Z
+Humidity: 49 Temperature: 23 TimeStamp: 2023-12-13T12:49:08Z

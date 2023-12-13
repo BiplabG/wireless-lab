@@ -26,4 +26,5 @@ def animate(i):
     ax2.set_ylabel("Relative Humidity")
     ax2.plot(timeinfo_ar, humidity_ar)
 ani = animation.FuncAnimation(fig, animate, interval=1000)
+fig.suptitle('IOT Device 2', fontsize=12)
 plt.show()

@@ -152,7 +152,7 @@ void setup_wifi() {
 void callback(char* topic, byte* message, unsigned int length) {
   
   String messageTemp;
-  if (strcmp(topic, "krishna_topic_2") == 0){
+  if (strcmp(topic, "krishna_topic_1") == 0){
     Serial.print("Message arrived on topic: ");
     Serial.print(topic);
     Serial.print(". Message: ");
@@ -160,7 +160,7 @@ void callback(char* topic, byte* message, unsigned int length) {
       Serial.print((char)message[i]);
       messageTemp += (char)message[i];
     }
-  } else if(strcmp(topic, "acknowledge") == 0){
+  } else if(strcmp(topic, "acknowledge1") == 0){
     for (int i = 0; i < length; i++) {
       messageTemp += (char)message[i];
     }
@@ -177,10 +177,10 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ESP8266Client")) {
+    if (client.connect("ESP8266Client1")) {
       Serial.println("connected");
       // Subscribe
-      client.subscribe("acknowledge");
+      client.subscribe("acknowledge1");
       //client.publish("heartbeat", "Initial start message");
     } else {
       Serial.print("failed, rc=");
@@ -249,7 +249,7 @@ void loop() {
     dht_get_data();
     lastMsg = now;
     // encryptWhole(msg, strlen(msg));
-    client.publish("krishna_topic_2", encryptedText);
+    client.publish("krishna_topic_1", encryptedText);
   }
   if (now - lastheartbeat > 60000){
     sendData = false;
